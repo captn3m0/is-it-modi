@@ -69,4 +69,4 @@ model.fit_generator(
 
 model.save_weights('modi-face-model.h5')
 
-print model.evaluate_generator(validation_generator, nb_validation_samples)
+print(model.evaluate_generator(validation_generator, nb_validation_samples))
