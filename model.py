@@ -56,16 +56,14 @@ model.compile(loss='binary_crossentropy',
               metrics=['accuracy'])
 
 nb_epoch = 5
-nb_train_samples = 163
 nb_validation_samples = 31
 
 model.fit_generator(
         train_generator_augmented,
-        samples_per_epoch=nb_train_samples,
         nb_epoch=nb_epoch,
         steps_per_epoch=1000,
         validation_data=validation_generator,
-        nb_val_samples=nb_validation_samples)
+        validation_steps=nb_validation_samples)
 
 model.save_weights('modi-face-model.h5')
 
