@@ -1,8 +1,7 @@
-# Detecting-Modi-and-Kejriwal
-Python script to identify if Modi or Kejriwal is present in the image
+# is-it-modi
 
---Data has been collected from Google Images using a web extension which basically scraps all images from any particular tab.
+Python script to identify if Modi in an image.
 
---I have tried to clean the data by only training the faces instead of the whole image which indeed increases its speed and accuracy.
+## Credits
 
---A simple CNN algorithm has been used to detect the face .
+- Forked from https://github.com/lirus7/Detecting-Modi-and-Kejriwal with some minor changes.
