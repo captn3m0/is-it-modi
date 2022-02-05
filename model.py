@@ -67,16 +67,6 @@ model.fit_generator(
         validation_data=validation_generator,
         nb_val_samples=nb_validation_samples)
 
-model.save_weights('cnn_20_epochs.h5')
+model.save_weights('modi-face-model.h5')
 
 print model.evaluate_generator(validation_generator, nb_validation_samples)
-
-'''
-#JUST TO TEST
-img=image.load_img('/home/lirus/Desktop/Precog-2/Data/Validation/Kejri/101.jpg',target_size=(250,250))
-x = image.img_to_array(img)
-x = np.expand_dims(x, axis=0)
-images = np.vstack([x])
-ans = model.predict(images)
-print ans
-'''
